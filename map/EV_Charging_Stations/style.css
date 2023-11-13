@@ -1,0 +1,120 @@
+/* using font from google */
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  padding: 1em;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0.25em 0;
+}
+
+#titleText{
+  margin: 20px;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 0.25em 0;
+}
+
+h3 {
+  font-size: 1.7em;
+  margin: 0.25em 0;
+}
+
+p {
+  font-size: 1em;
+}
+html {
+  background-image: url("Electric.png");;
+}
+
+#hover-content {
+  font-size: large;
+}
+/* using flex to nicely position elements */
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #66ccff;
+  border-radius: 15px;
+  margin: 15px;
+}
+
+.textbox{
+  padding: 20px;
+  margin-left: 15px;
+}
+
+#mapTakeaway {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.takeawayCard {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  background-color: #66ccff;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#takeaways {
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 15px;
+  background-color: #66ccff;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+.takeawayCard h2 {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.takeawayCard p {
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.buttonChange{
+  background-color: #66ccff;
+  margin: 10px;
+  font-size: 15px;
+  color: #ffffff;
+  border-radius: 5px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.buttonChange:hover {
+  opacity: 70%;
+  background-color: #ffffff;
+  color: rgb(76, 76, 76);
+}
+
+.buttonChangeDiv{
+  margin: 10px;
+}

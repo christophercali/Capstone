@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <title>The Charge Forward</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1 id="titleText">The Charge Forward</h1>
+  </header>
+  <main>
+    <section>
+      <div class="textContainer">
+        <div id="dataP" class="textbox">
+          <p>To better understand the EV charging landscape in NYC, I bring together <a
+              href="https://afdc.energy.gov/fuels/electricity_locations.html#/find/nearest" target="blank">Department of
+              Energy Data</a> on publicly available EV charging stations and <a
+              href="https://www.nyc.gov/site/planning/planning-level/nyc-population/american-community-survey.page"
+              target="blank">American Community Survey</a> data (5-Year: Estimate of Median Household Income, Race
+            Breakdown, and Education Level). With this information, we can identify areas that are underserved by EV
+            charging infrastructure and make potential recommendations for equitable development.</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <header>
+        <h2>A Demographic Lens</h2>
+      </header>
+      <div id="hover-content"> </div>
+      <div id="container">
+        <button class="buttonChange" id="income">
+          <div class="buttonChangeDiv">Show by Income Level</div>
+        </button>
+        <button class="buttonChange" id="race">
+          <div class="buttonChangeDiv">Show by Race</div>
+        </button>
+        <button class="buttonChange" id="education">
+          <div class="buttonChangeDiv">Show by Education Level</div>
+        </button>
+        <!-- The map will be in this container -->
+      </div>
+      <div id="takeaways">
+        <h3>Takeaways and Further Questions</h3>
+      </div>
+      <div id="mapTakeaway">
+        <div class="takeawayCard">
+          <h2>Outer Boroughs</h2>
+          <p>Into the outer boroughs, there are fewer options for public charging available. These areas make it
+            difficult for those interested in switching to an EV.</p>
+        </div>
+        <div class="takeawayCard">
+          <h2>Income</h2>
+          <p>As expected, higher income areas have more charging infrastructure. EVs are still not very affordable.</p>
+        </div>
+        <div class="takeawayCard">
+          <h2>Racial Disparity</h2>
+          <p>Areas with a high percentage of BIPOC (Black, Indigenous, People of Color) individuals do not have EV
+            charging locations. What can the City do to increase equity on this front?</p>
+        </div>
+        <div class="takeawayCard">
+          <h2>Education</h2>
+          <p>The map for education and income do not look very different, likely because there is a high correlation
+            between the two.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- <section> Keeping this code for further expansion of the project at a later time. 
+            <h2>See How Many FAST Chargers Are in Your Borough</h2>
+            <div id="findContainer">
+              <button class="buttonChange" class="buttonChangeB" id="Brooklyn"><div class="buttonChangeDiv">Brooklyn</div></button>
+              <button class="buttonChange" class="buttonChangeB" id="Manhattan"><div class="buttonChangeDiv">Manhattan</div></button>
+              <button class="buttonChange" class="buttonChangeB" id="Queens"><div class="buttonChangeDiv">Queens</div></button>
+              <button class="buttonChange" class="buttonChangeB" id="Staten Island"><div class="buttonChangeDiv">Staten Island</div></button>
+              <button class="buttonChange" class="buttonChangeB" id="Bronx"><div class="buttonChangeDiv">Bronx</div></button>
+            </div>
+          </section> -->
+
+    <!-- <section>
+          <header>
+            <h2>The FAST Chargers: Where are they?</h2>
+          </header>
+          <div id="barChartContainer">
+            The bar chart will be in this container - Keeping this code for further expansion of the project at a later time
+
+          </div>
+        </section> -->
+  </main>
+</body>
+<script src="../lib/d3.js"></script>
+<script src="main.js"></script>
+</body>
+
+</html>
