@@ -47,6 +47,17 @@ p {
   margin: 15px;
 }
 
+/* centering all the sections */
+.centering {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  margin: 15px;
+}
+
+
 .textbox {
   padding: 20px;
   margin-left: 15px;
@@ -155,7 +166,7 @@ p {
   color: #ffffff;
   margin: 0;
 }
-  
+
 
 /* MODAL STUFF */
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -171,14 +182,20 @@ p {
 }
 
 /* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
+.modal-content,
+#caption {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
 
 @keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
 }
 
 /* The Close Button */
@@ -200,62 +217,74 @@ p {
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
   .modal-content-img {
     width: 100%;
   }
 }
 
-.modal-body{
+.modal-body {
   font-family: "PT Serif";
 }
 
-.image{
+.image {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
 
-.video{
+.video {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
 /**************************
   Basic Modal Styles
 **************************/
 
 
-  /* MODAL FOR THE IMAGE ONLY in the TREE BS MODAL */
+/* MODAL FOR THE IMAGE ONLY in the TREE BS MODAL */
 
-  /* Style the Image Used to Trigger the Modal */
-  #myImgArticle{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    /* what they had */
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
+/* Style the Image Used to Trigger the Modal */
+#myImgArticle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  /* what they had */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
-#myImgArticle:hover {opacity: 0.7;}
+#myImgArticle:hover {
+  opacity: 0.7;
+}
 
 /* The Modal (background) */
 .modalImg {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
 }
 
 /* Modal Content (Image) */
@@ -276,4 +305,16 @@ p {
   color: #ccc;
   padding: 10px 0;
   height: 150px;
+}
+
+.tableau {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tableauPlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
