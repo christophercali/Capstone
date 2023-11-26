@@ -307,14 +307,47 @@ p {
   height: 150px;
 }
 
-.tableau {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* TABLE STYLING */
+#charging-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
 }
 
-.tableauPlaceholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.table-caption {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.borough {
+  /* Styles for the 'Borough' column */
+}
+
+.charging-stations {
+  /* Styles for the 'Charging Stations' column */
+}
+
+.level2-chargers {
+  /* Styles for the 'Level 2 Chargers' column */
+}
+
+.dc-fast-chargers {
+  /* Styles for the 'DC Fast Chargers' column */
+}
+
+.grand-total {
+  /* Styles for the 'Grand Total' row */
+  font-weight: bold;
 }
