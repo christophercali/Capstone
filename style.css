@@ -351,3 +351,13 @@ th {
   /* Styles for the 'Grand Total' row */
   font-weight: bold;
 }
+
+/* Making buttons on city electrification efforts go transparent on hover */
+#TLC:hover,
+#DCAS:hover,
+#DOT:hover,
+#PLANYC:hover,
+#Private:hover {
+  opacity: 0.8;
+  transition: opacity 0.5s ease;
+}
