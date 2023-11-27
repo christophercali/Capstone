@@ -361,3 +361,15 @@ th {
   opacity: 0.8;
   transition: opacity 0.5s ease;
 }
+
+.gif {
+  width: 90%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.tableauPlaceholder {
+  display: block;
+}
