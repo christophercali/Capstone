@@ -24,6 +24,12 @@
 
   <!-- p5 for sketch -->
   <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
+
+  <!-- ScrollMagic -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script> -->
+  <!-- GSAP (TweenMax) for animations -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script> -->
+
 </head>
 
 <body>
@@ -35,9 +41,8 @@
     <section id="introduction">
       <div class="textContainer">
         <div id="introP" class="textbox">
-          <p>The future of vehicular travel is rapidly moving towards electric-powered vehicles, thanks to a surge of
-            interest and investment in sustainable transportation. The US government is actively supporting this
-            transition through various incentives and regulations with the recent passing of the Bipartisan
+          <p>The US government is actively supporting the transition to Electric Vehicles (EVs) through various
+            incentives and regulations with the recent passing of the Bipartisan
             Infrastructure Bill and Inflation Reduction Act. A <a
               href="https://www.whitehouse.gov/briefing-room/statements-releases/2023/02/15/fact-sheet-biden-harris-administration-announces-new-standards-and-major-progress-for-a-made-in-america-national-network-of-electric-vehicle-chargers/"
               target="blank">recent press release by the Biden-Harris administration</a> sets a goal of making EVs
@@ -45,18 +50,18 @@
 
           <p><strong>For the transition to fully electric vehicles to be successful, it is essential that the charging
               infrastructure supports the rollout by being widespread and easily accessible. New York City encounters
-              unique challenges to improving and increasing Electric Vehicle Charging infrastructure due to its densely
-              packed population.</strong></p>
+              various challenges to improving and increasing EV Charging infrastructure and is implementing different
+              policies and goals to help spur growth.</strong></p>
 
-          <h3>This Capstone project seeks to evaluate where NYC stands in its efforts to establish accessible and
+          <h3 id="researchQuestion">Were does NYC stand in its efforts to establish accessible and
             widespread
-            Electric Vehicle charging infrastructure.</h3>
-
+            Electric Vehicle charging infrastructure and are its current efforts enough?</h3>
     </section>
 
     <section id="initialExploration" class="centering">
-      <h3>Publicly Accessible EV Charging Infrastructure in NYC</h3>
-      <table id="charging-table">
+      <!-- <h3>Publicly Accessible EV Charging Infrastructure in NYC</h3> -->
+      <h4>Currently, the city does not have enough charging stations to sustain an influx of electric vehicles.</h4>
+      <!-- <table id="charging-table">
         <h4 class="table-caption">Overview</h4>
         <thead>
           <tr>
@@ -104,10 +109,25 @@
             <td class="grand-total">182</td>
           </tr>
         </tbody>
-      </table>
-      <br> <br>
-      <p>The below Tableau Story highlights the current state of publicly accessible electric vehicle charging stations
-        in NYC.</p>
+      </table> -->
+      <!-- <br> <br> -->
+      <p>Before exploring the Department of Energy data on EV Charging Stations below, it is important to
+        understand that there are three types of EV chargers: Level 1, Level 2, and DC Fast Chargers (Level 3). Each
+        level provides different speeds for a full charge:</p>
+      <ul>
+        <li>
+          <strong>Level 1:</strong> 24+ Hours
+        </li>
+        <li>
+          <strong>Level 2:</strong> 4-10+ Hours
+        </li>
+        <li>
+          <strong>DC Fast:</strong> 15 mins to 1+ Hour
+        </li>
+      </ul>
+      <p>Due to its inefficiency, Level 1 chargers are excluded from analysis below. </p>
+
+
       <div class='tableauPlaceholder' id='viz1699757492728' style='position: relative'><noscript><a href='#'><img
               alt='Exploration of Public EV Charging Stations  '
               src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;EV&#47;EVChargingExploration&#47;ExplorationofPublicEVChargingStations&#47;1_rss.png'
@@ -136,8 +156,26 @@
     <br>
 
     <section id="theChallenge" class="centering">
-      <h3>Unique and Common Challenges</h3>
+      <h3>Common and Unique Challenges</h3>
+      <h4>"Filling up" using a gas pump is much quicker than "charging up" an electric vehicle.</h4>
+      <h6>A single gas pump will "fill up" nearly 3X as many vehicles as a single DC Fast
+        Charger, assuming 5 minutes at the pump versus 15 at the charger.</h6>
+      <div><img class="gif" class="centering" src="assets/gasvelectric.gif" alt="Gas and Electric Comparison"></div>
+      <br>
+      <h4>And that is being generous to the charger.</h4>
+      <br> <br>
+      <h4>There are many more individual gas pumps than there are DC Fast Chargers. </h4>
+      <h6>A conservative estimate of gas pumps in NYC puts it at nearly 2,500. The Department of Energy Data gives a
+        total of 170 DC Fast Chargers.</h6>
+      <div><img class="gif" class="centering" src="assets/gasvelectric.gif" alt="Gas and Electric Comparison"></div>
+      <br>
+      <h4>MORE ELABORATION NEEDED HERE. </h4>
+      <br> <br>
       <h4>New York City is the most densely populated city in the United States.</h4>
+      <p>NYC's densely packed population makes it more difficult to implement an efficient and widespread electric
+        vehicle
+        (EV) charging network. With limited space and skyrocketing property costs, it is difficult to find suitable
+        locations for charging stations. See a comparison of the United States' ten most densely populated cities:</p>
       <div class='tableauPlaceholder' id='viz1701021921748' style='position: center'><noscript><a href='#'><img
               alt='Dashboard 1 '
               src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Po&#47;PopulationDensity_17010218738420&#47;Dashboard1&#47;1_rss.png'
@@ -161,16 +199,6 @@
         <script
           type='text/javascript'>                    var divElement = document.getElementById('viz1701021921748'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '650px'; vizElement.style.height = '687px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '650px'; vizElement.style.height = '687px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
       </div>
-      <p>NYC's densely packed population makes it more difficult to implement an efficient and widespread electric
-        vehicle
-        (EV) charging network. With limited space and skyrocketing property costs, it is difficult to find suitable
-        locations for charging stations. Common challenges to expanding EV infrastructure also make the density problem
-        worse for the city.</p>
-      <br> <br>
-      <h4>"Charging up" an electric vehicle still takes much longer than "filling up" using a gas pump.</h4>
-
-      <div><img class="gif" class="centering" src="assets/gasvelectric.gif" alt="Gas and Electric Comparison"></div>
-
       <!-- <p>There will be additional information here on: Dense Population of NYC with Limited Space, Gas Fill Up VS DC
         Fast Charge Up. Maybe also discuss the electric grid, broken chargers. </p> -->
     </section>
@@ -1235,6 +1263,12 @@
         optimism.</p>
       <p>Segue into a discussion on Equity. Redirect to mapping page where individuals can view where EV charging
         stations are with Census Data.</p>
+    </section>
+
+    <section id="noteOnEquity" class="centering">
+      <h3>A Note on Equity</h3>
+      <p>There is a part of the discussion that we have not had yet: Equity. Please see here for an extended section
+        exploring equity through an EV charging infrastructure lens.</p>
     </section>
 
   </main>
