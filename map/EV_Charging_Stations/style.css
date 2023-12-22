@@ -10,7 +10,7 @@ h1 {
   margin: 0.25em 0;
 }
 
-#titleText{
+#titleText {
   margin: 20px;
 }
 
@@ -27,13 +27,16 @@ h3 {
 p {
   font-size: 1em;
 }
+
 html {
-  background-image: url("Electric.png");;
+  /* background-image: url("Electric.png"); */
+  background-color: rgb(208, 208, 208);
 }
 
 #hover-content {
   font-size: large;
 }
+
 /* using flex to nicely position elements */
 .textContainer {
   display: flex;
@@ -45,7 +48,7 @@ html {
   margin: 15px;
 }
 
-.textbox{
+.textbox {
   padding: 20px;
   margin-left: 15px;
 }
@@ -98,7 +101,7 @@ html {
   margin: 0;
 }
 
-.buttonChange{
+.buttonChange {
   background-color: #66ccff;
   margin: 10px;
   font-size: 15px;
@@ -115,6 +118,11 @@ html {
   color: rgb(76, 76, 76);
 }
 
-.buttonChangeDiv{
+.buttonChangeDiv {
   margin: 10px;
+}
+
+#chargedup {
+  width: 60%;
+  padding-bottom: 30px;
 }
