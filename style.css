@@ -57,6 +57,15 @@ p {
   margin: 15px;
 }
 
+/* .tableauPlaceholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  margin: 15px;
+} */
+
 
 .textbox {
   padding: 20px;
@@ -363,7 +372,7 @@ th {
 }
 
 .gif {
-  width: 90%;
+  width: 65%;
   max-width: 100%;
   height: auto;
   display: block;
@@ -380,4 +389,8 @@ th {
 
 .TLCSOI {
   width: 65%;
+}
+
+#lighten {
+  color: #959595;
 }
